@@ -1,13 +1,11 @@
 require_relative 'int_to_roman'
 
 describe "Roman Numeral Converter" do
-
 	before :each do
 		@nums = RomanNumerals.new
 	end
 
 	context "convert number to roman numeral"
-
 		it "converts 1 to I" do
 			@nums.to_roman_num(1).should eq "I"
 		end
