@@ -5,7 +5,7 @@ describe "Roman Numeral Converter" do
 		@nums = RomanNumerals.new
 	end
 
-	context "convert number to roman numeral"
+	context "convert number to roman numeral" do
 		it "converts 1 to I" do
 			@nums.to_roman_num(1).should eq "I"
 		end
@@ -57,8 +57,9 @@ describe "Roman Numeral Converter" do
 		it "converts 1000 to M" do
 			@nums.to_roman_num(1000).should eq "M"
 		end
+	end
 
-	context "should add the numbers correctly"
+	context "should add the numbers correctly" do
 		it "converts 3 to III" do
 			@nums.to_roman_num(3).should eq "III"
 		end
@@ -68,4 +69,4 @@ describe "Roman Numeral Converter" do
 		end
 	end
 	
-# end
+end
